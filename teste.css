@@ -121,7 +121,7 @@ main {
 .projetos-container,
 .experiencia-container,
 .contato-container {
-  max-width: auto;
+  max-width: 100%;
   background: #dfdfdf;
   border: 1px solid #ddd; 
   border-radius: 12px;
@@ -182,6 +182,7 @@ content: "🔗";
   text-decoration: none;
   border-radius: 8px;
   transition: background 0.3s ease;
+  z-index:2;
 }
 
 .btn:hover {
@@ -380,6 +381,7 @@ footer {
   }
 
 }
+
 
 
 
