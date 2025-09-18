@@ -9,15 +9,12 @@
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
+ 
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  display: flex; /* Adicionando Flexbox */
+  flex-direction: column; /* Organiza os elementos verticalmente */
+  min-height: 100vh; /* Garante que o corpo ocupa no mínimo a altura total da tela */
 }
 
 /* ===== HEADER E NAVEGAÇÃO ===== */
@@ -26,19 +23,18 @@ header {
   height: 200px;
   position: relative;
   z-index: 1000;
-  overflow: visible;
+  overflow:visible;
 }
 
 #mobile_btn {
   color: #fff;
   position: absolute;
   left: 10px;
-  top: 18px;
+  top: 10px;
   font-size: 28px;
   cursor: pointer;
   padding: 10px;
   display: none;
-  z-index: 1200; /* botão sempre clicável */
 }
 
 .div1 {
@@ -52,7 +48,7 @@ header {
   padding: 0;
   margin: 0;
   line-height: 60px;
-  z-index: 900; /* abaixo do nav mobile */
+  z-index:900;
 }
 .div1 > h1{
   color: #0d3055;
@@ -92,6 +88,10 @@ nav {
   border-radius: 10px;
 }
 
+
+
+
+
 .active-link {
   background-color: #1e8fff0e;
   border-bottom: 2px solid #FFFFFF;
@@ -99,9 +99,9 @@ nav {
 
 /* ===== CONTEÚDO PRINCIPAL (MAIN) ===== */
 main {
-  flex-grow: 1;
+  flex-grow: 1; /* Adicionando para empurrar o footer para baixo */
   margin: auto;
-  margin-top: 80px; /* corrigido com px */
+  margin-top: 80px;
 }
 
 .portfolio-section {
@@ -123,7 +123,7 @@ main {
 .contato-container {
   max-width: 700px;
   background: #dfdfdf;
-  border: 1px solid #ddd;
+  border: 1px solid #ddd; 
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -134,7 +134,7 @@ main {
   text-decoration: none;
 }
 .contato-container a::after{
-  content: "🔗";
+content: "🔗";
 }
 .contato-container a:hover{
   text-decoration: underline;
@@ -149,7 +149,6 @@ main {
 .contato-container{
   line-height: 160%;
 }
-
 /* --- Seção Sobre --- */
 .sobre-container h2 {
   margin-bottom: 20px;
@@ -195,6 +194,7 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 25px;
   margin-top: 30px;
+  
 }
 
 .skill-item {
@@ -203,6 +203,7 @@ main {
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
+  
 }
 
 .skill-item:hover {
@@ -230,11 +231,10 @@ main {
 }
 
 /* --- Seção Projetos --- */
-/* diminuí o min-width pra não estourar em telas pequenas */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
   margin-top: 30px;
 }
 
@@ -304,17 +304,16 @@ footer {
     align-items: center;
     justify-content: center;
   }
-  .div1 h1,h6{
-    display: inline;
-  }
-  .div1 h1{
-    position: relative;
-    top: 40px;
-  }
-  .div1 h6{
-    line-height: 100px;
-  }
-
+ .div1 h1,h6{
+  display: inline;
+ }
+ .div1 h1{
+   position: relative;
+   top: 40px;
+ }
+ .div1 h6{
+  line-height: 100px
+ }
   #mobile_btn {
     display: inline-block;
     cursor: pointer;
@@ -323,7 +322,6 @@ footer {
     left: 10px;
   }
 
-  /* nav mobile: posicionado imediatamente abaixo do header */
   nav.nav {
     display: flex;
     flex-direction: column;
@@ -333,7 +331,7 @@ footer {
     padding: 20px;
     width: 100%;
     position: absolute;
-    top: 100%; /* fica exatamente abaixo do header */
+    top: 100%;
     left: 0;
     height: auto;
     max-height: calc(100vh - 200px);
@@ -341,8 +339,7 @@ footer {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
-    z-index: 1100; /* acima do .div1 */
-    overflow-y: auto; /* permite rolar se tiver muitos links */
+    z-index:1100;
   }
 
   nav.nav.active {
@@ -369,32 +366,29 @@ footer {
   }
   
   footer {
-    text-align: center;
-    padding: 4px;
-    background-color: #0D1B2A;
-    color: #fff;
-    font-size: 0.9em;
+  text-align: center;
+  padding: 4px;
+  background-color: #0D1B2A;
+  color: #fff;
+  font-size: 0.9em;
   }
+
 
   .navlinks:hover,
   .navlinks:focus-visible {
-    background-color: #1e8fff0e;
-    border-bottom: 2px solid #FFFFFF;
-  }
 
-  /* garantir que o grid dos projetos fique em 1 coluna em telas muito pequenas */
+  background-color: #1e8fff0e;
+  border-bottom: 2px solid #FFFFFF;
+  }
+ 
+}
+
+@media screen and (max-width: 500px) {
   .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 18px;
+    grid-template-columns: 1fr; /* força uma coluna no celular */
+    gap: 20px;
+   #mobile_btn { top: 18px; }
   }
 }
 
-/* ajuste extra para telas muito pequenas (ex: iPhone SE, etc) */
-@media screen and (max-width: 420px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
-  .project-card img { height: 150px; }
-  #mobile_btn { top: 14px; left: 8px; font-size: 26px; }
-}
+
