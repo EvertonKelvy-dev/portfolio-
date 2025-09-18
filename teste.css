@@ -35,6 +35,7 @@ header {
   cursor: pointer;
   padding: 10px;
   display: none;
+  z-index:3;
 }
 
 .div1 {
@@ -99,7 +100,7 @@ nav {
 /* ===== CONTEÚDO PRINCIPAL (MAIN) ===== */
 main {
   flex-grow: 1; /* Adicionando para empurrar o footer para baixo */
-  margin-top: 700px;
+  margin-top: 40px;
   overflox-x:hidden;
 }
 
@@ -379,6 +380,7 @@ footer {
   }
 
 }
+
 
 
 
