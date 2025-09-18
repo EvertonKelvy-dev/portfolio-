@@ -98,7 +98,6 @@ nav {
 /* ===== CONTEÚDO PRINCIPAL (MAIN) ===== */
 main {
   flex-grow: 1; /* Adicionando para empurrar o footer para baixo */
-  margin: auto;
   margin-top: 240px;
 }
 
@@ -378,3 +377,4 @@ footer {
   }
 
 }
+
