@@ -23,6 +23,7 @@ header {
   height: 200px;
   position: relative;
   z-index: 1000;
+  overflow-x:hidden;
 }
 
 #mobile_btn {
@@ -98,7 +99,8 @@ nav {
 /* ===== CONTEÚDO PRINCIPAL (MAIN) ===== */
 main {
   flex-grow: 1; /* Adicionando para empurrar o footer para baixo */
-  margin-top: 240px;
+  margin-top: 80px;
+  overflox-x:hidden;
 }
 
 .portfolio-section {
@@ -377,4 +379,5 @@ footer {
   }
 
 }
+
 
