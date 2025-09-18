@@ -15,6 +15,7 @@ body {
   display: flex; /* Adicionando Flexbox */
   flex-direction: column; /* Organiza os elementos verticalmente */
   min-height: 100vh; /* Garante que o corpo ocupa no mínimo a altura total da tela */
+  overflow-x:hidden;
 }
 
 /* ===== HEADER E NAVEGAÇÃO ===== */
@@ -23,7 +24,6 @@ header {
   height: 200px;
   position: relative;
   z-index: 1000;
-  overflow:visible;
 }
 
 #mobile_btn {
@@ -42,13 +42,12 @@ header {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3.5em;
+  font-size: 3.5EM;
   color: #fff;
   font-style: italic;
   padding: 0;
   margin: 0;
   line-height: 60px;
-  z-index:900;
 }
 .div1 > h1{
   color: #0d3055;
@@ -101,7 +100,7 @@ nav {
 main {
   flex-grow: 1; /* Adicionando para empurrar o footer para baixo */
   margin: auto;
-  margin-top: 80px;
+  margin-top: 80;
 }
 
 .portfolio-section {
@@ -234,7 +233,7 @@ content: "🔗";
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 40px;
+  gap: 20px;
   margin-top: 30px;
 }
 
@@ -331,15 +330,13 @@ footer {
     padding: 20px;
     width: 100%;
     position: absolute;
-    top: 100%;
+    top: 100px;
     left: 0;
-    height: auto;
-    max-height: calc(100vh - 200px);
+    height: 300px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
-    z-index:1100;
   }
 
   nav.nav.active {
@@ -387,8 +384,5 @@ footer {
   .projects-grid {
     grid-template-columns: 1fr; /* força uma coluna no celular */
     gap: 20px;
-   #mobile_btn { top: 18px; }
   }
 }
-
-
