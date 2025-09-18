@@ -10,7 +10,7 @@
 }
 
 body {
-  overflow-x: hidden;
+ 
   background-color: #ffffff;
   display: flex; /* Adicionando Flexbox */
   flex-direction: column; /* Organiza os elementos verticalmente */
@@ -23,7 +23,6 @@ header {
   height: 200px;
   position: relative;
   z-index: 1000;
-  overflow-x:hidden;
 }
 
 #mobile_btn {
@@ -35,7 +34,6 @@ header {
   cursor: pointer;
   padding: 10px;
   display: none;
-  z-index:3;
 }
 
 .div1 {
@@ -100,8 +98,8 @@ nav {
 /* ===== CONTEÚDO PRINCIPAL (MAIN) ===== */
 main {
   flex-grow: 1; /* Adicionando para empurrar o footer para baixo */
-  margin-top: 40px;
-  overflox-x:hidden;
+  margin: auto;
+  margin-top: 80;
 }
 
 .portfolio-section {
@@ -121,7 +119,7 @@ main {
 .projetos-container,
 .experiencia-container,
 .contato-container {
-  max-width: 100%;
+  max-width: 700px;
   background: #dfdfdf;
   border: 1px solid #ddd; 
   border-radius: 12px;
@@ -182,7 +180,6 @@ content: "🔗";
   text-decoration: none;
   border-radius: 8px;
   transition: background 0.3s ease;
-  z-index:2;
 }
 
 .btn:hover {
@@ -234,7 +231,7 @@ content: "🔗";
 /* --- Seção Projetos --- */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 40px;
   margin-top: 30px;
 }
@@ -379,13 +376,12 @@ footer {
   background-color: #1e8fff0e;
   border-bottom: 2px solid #FFFFFF;
   }
-
+ 
 }
 
-
-
-
-
-
-
-
+@media screen and (max-width: 500px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* força uma coluna no celular */
+    gap: 20px;
+  }
+}
