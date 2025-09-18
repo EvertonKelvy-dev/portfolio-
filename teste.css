@@ -99,7 +99,7 @@ nav {
 /* ===== CONTEÚDO PRINCIPAL (MAIN) ===== */
 main {
   flex-grow: 1; /* Adicionando para empurrar o footer para baixo */
-  margin-top: 40px;
+  margin-top: 20px;
   overflox-x:hidden;
 }
 
@@ -379,6 +379,7 @@ footer {
   }
 
 }
+
 
 
 
