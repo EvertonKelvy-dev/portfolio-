@@ -99,7 +99,7 @@ nav {
 /* ===== CONTEÚDO PRINCIPAL (MAIN) ===== */
 main {
   flex-grow: 1; /* Adicionando para empurrar o footer para baixo */
-  margin-top: 80px;
+  margin-top: 40px;
   overflox-x:hidden;
 }
 
@@ -120,7 +120,7 @@ main {
 .projetos-container,
 .experiencia-container,
 .contato-container {
-  max-width: 700px;
+  max-width: auto;
   background: #dfdfdf;
   border: 1px solid #ddd; 
   border-radius: 12px;
@@ -379,5 +379,6 @@ footer {
   }
 
 }
+
 
 
