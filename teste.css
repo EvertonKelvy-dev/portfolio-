@@ -15,7 +15,6 @@ body {
   display: flex; /* Adicionando Flexbox */
   flex-direction: column; /* Organiza os elementos verticalmente */
   min-height: 100vh; /* Garante que o corpo ocupa no mínimo a altura total da tela */
-  overflow-x:hidden;
 }
 
 /* ===== HEADER E NAVEGAÇÃO ===== */
@@ -50,10 +49,18 @@ header {
   line-height: 60px;
 }
 .div1 > h1{
-  color: #0d3055;
+  color: #ffffff;
 }
 .div1 > h6{
   color: #88a2bdf8;
+}
+.div1 h1>a{
+  color:#0d3055;
+  text-decoration: none;
+}
+.div1 h6>a{
+  color: #88a2bdf8;
+  text-decoration: none;
 }
 
 nav {
@@ -98,9 +105,11 @@ nav {
 
 /* ===== CONTEÚDO PRINCIPAL (MAIN) ===== */
 main {
-  flex-grow: 1; /* Adicionando para empurrar o footer para baixo */
+  flex: 1; /* Adicionando para empurrar o footer para baixo */
   margin: auto;
-  margin-top: 80;
+  margin-top: 80px;
+  max-width: 1200px;
+  padding: 20px;
 }
 
 .portfolio-section {
@@ -233,7 +242,7 @@ content: "🔗";
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  gap: 40px;
   margin-top: 30px;
 }
 
@@ -293,6 +302,7 @@ footer {
   background-color: #0D1B2A;
   color: #fff;
   font-size: 0.9em;
+  margin-top: 0;
 }
 
 /* ===== MEDIA QUERIES (ESTILO RESPONSIVO / MOBILE) ===== */
@@ -313,12 +323,13 @@ footer {
  .div1 h6{
   line-height: 100px
  }
-  #mobile_btn {
+#mobile_btn {
     display: inline-block;
     cursor: pointer;
     top: 20%;
     transform: translateY(-50%);
     left: 10px;
+    
   }
 
   nav.nav {
