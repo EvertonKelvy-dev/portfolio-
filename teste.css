@@ -141,7 +141,7 @@ main {
   padding: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-bottom: 3px dashed #1E90FF;
-  text-align: center;
+ 
 }
 .contato-container a{
   text-decoration: none;
@@ -181,6 +181,9 @@ content: "🔗";
   color:#39b14d;
 }
 
+.skills-icons{
+  line-height: 50px;
+}
 
 
 
@@ -382,7 +385,8 @@ footer {
 
 @media screen and (max-width: 500px) {
   .projects-grid {
-    grid-template-columns: 1fr; /* força uma coluna no celular */
+    grid-template-columns: 1fr; 
     gap: 20px;
   }
 }
+
