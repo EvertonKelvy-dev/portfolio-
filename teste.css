@@ -11,7 +11,7 @@
 
 html, body {
   max-width: 100%;
-  overflow-x: hidden; 
+  overflow-x: hidden; /* bloqueia rolagem lateral */
 }
 
 body {
@@ -96,21 +96,19 @@ nav {
   transition: all 0.1s ease;
   padding: 6px 10px;
   margin-top: 1px;
-  border-radius: 10px;
+  
 }
 
 .navlinks:hover{
   color: #fff;
-  background-color: transparent;
   border-bottom:2px solid #fff;
-  border-radius:10px;
+  border-bottom-width: 1px;
+
 }
 
-
-
 .active-link {
-  background-color: #1e8fff0e;
   border-bottom: 2px solid #FFFFFF;
+  border-bottom-width: 1px;
 }
 
 /* ===== CONTEÚDO PRINCIPAL (MAIN) ===== */
@@ -146,7 +144,6 @@ main {
   padding: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-bottom: 3px dashed #1E90FF;
- 
 }
 .contato-container a{
   text-decoration: none;
@@ -390,9 +387,7 @@ footer {
 
 @media screen and (max-width: 500px) {
   .projects-grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr; /* força uma coluna no celular */
     gap: 20px;
   }
 }
-
-
