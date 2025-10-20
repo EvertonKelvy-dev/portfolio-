@@ -9,9 +9,11 @@
   box-sizing: border-box;
 }
 
+
 html, body {
   max-width: 100%;
   overflow-x: hidden; /* bloqueia rolagem lateral */
+
 }
 
 body {
@@ -20,6 +22,7 @@ body {
   display: flex; /* Adicionando Flexbox */
   flex-direction: column; /* Organiza os elementos verticalmente */
   min-height: 100vh; /* Garante que o corpo ocupa no mínimo a altura total da tela */
+  
 }
 
 /* ===== HEADER E NAVEGAÇÃO ===== */
@@ -120,6 +123,7 @@ main {
   padding: 20px;
 }
 
+
 .portfolio-section {
   display: flex;
   justify-content: center;
@@ -187,6 +191,13 @@ content: "🔗";
   line-height: 50px;
 }
 
+.ic i {
+  font-size: 3rem;
+  top:88%;
+  left:94%;
+  position: fixed;
+
+}
 
 
 
@@ -317,6 +328,14 @@ footer {
  .div1 h6{
   line-height: 100px
  }
+ 
+.ic i{
+  font-size: 3rem;
+  top:90%;
+  left:88%;
+  position: fixed;
+
+}
 #mobile_btn {
     display: inline-block;
     cursor: pointer;
@@ -390,4 +409,12 @@ footer {
     grid-template-columns: 1fr; /* força uma coluna no celular */
     gap: 20px;
   }
+
+  .ic i{
+  font-size: 3rem;
+  top:90%;
+  left:88%;
+  position: fixed;
+
+}
 }
