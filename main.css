@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* ===== ESTILOS GERAIS E RESET ===== */
+
 * {
   font-family: 'Poppins', sans-serif;
   padding: 0;
@@ -12,20 +12,20 @@
 
 html, body {
   max-width: 100%;
-  overflow-x: hidden; /* bloqueia rolagem lateral */
+  overflow-x: hidden;
 
 }
 
 body {
  
   background-color: #ffffff;
-  display: flex; /* Adicionando Flexbox */
-  flex-direction: column; /* Organiza os elementos verticalmente */
-  min-height: 100vh; /* Garante que o corpo ocupa no mínimo a altura total da tela */
+  display: flex; 
+  flex-direction: column;
+  min-height: 100vh; 
   
 }
 
-/* ===== HEADER E NAVEGAÇÃO ===== */
+
 header {
   background-color: #0D1B2A;
   height: 200px;
@@ -114,9 +114,9 @@ nav {
   border-bottom-width: 1px;
 }
 
-/* ===== CONTEÚDO PRINCIPAL (MAIN) ===== */
+
 main {
-  flex: 1; /* Adicionando para empurrar o footer para baixo */
+  flex: 1; 
   margin: auto;
   margin-top: 80px;
   max-width: 1200px;
@@ -168,7 +168,7 @@ content: "🔗";
 .contato-container{
   line-height: 160%;
 }
-/* --- Seção Sobre --- */
+
 .sobre-container h2 {
   margin-bottom: 20px;
   font-size: 1.8rem;
@@ -406,7 +406,7 @@ footer {
 
 @media screen and (max-width: 500px) {
   .projects-grid {
-    grid-template-columns: 1fr; /* força uma coluna no celular */
+    grid-template-columns: 1fr; 
     gap: 20px;
   }
 
@@ -418,3 +418,4 @@ footer {
 
 }
 }
+
